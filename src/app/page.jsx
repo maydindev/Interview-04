@@ -1,11 +1,12 @@
 'use client'
 import App from '../App'
+import {AppProvider} from "@/context/users"
 
 const Home = () => {
   return (
-    <div>
+    <AppProvider>
       <App />
-    </div>
+    </AppProvider>
   )
 }
 export default Home
